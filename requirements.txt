@@ -1,0 +1,17 @@
+# Gantt Chart Generator Dependencies
+
+# Core visualization and data processing
+plotly==5.17.0
+pandas==2.1.4
+
+# Optional: For static image export (PNG/PDF generation)
+kaleido==0.2.1
+
+# Standard library dependencies (included with Python)
+# - datetime: Date/time handling
+# - webbrowser: Browser automation
+# - os: File system operations
+
+# Development dependencies (optional)
+# jupyter==1.0.0  # For running the tutorial notebook
+# notebook==7.0.6  # Jupyter notebook server
