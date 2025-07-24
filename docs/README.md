@@ -239,6 +239,65 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Plotly team for the excellent visualization library
 - The open-source community for continuous inspiration
 
+## 📚 Interactive Tutorial
+
+### Jupyter Notebook Deep Dive
+
+The project includes a comprehensive **Jupyter notebook tutorial** (`tutorials/gantt_chart_tutorial.ipynb`) that provides:
+
+#### 🔬 **PhD-Level Analysis** (22 Interactive Cells)
+- **Mathematical foundations** of Gantt charts with formulas
+- **Critical Path Method (CPM)** theory and implementation
+- **Computational complexity analysis** and performance benchmarking
+- **Information visualization theory** and cognitive load principles
+
+#### 🛠 **Hands-On Implementation**
+- **Data structure design** with Pandas DataFrames
+- **Interactive Plotly visualizations** from basic to advanced
+- **Modern CSS techniques**: Glassmorphism, animations, responsive design
+- **Custom theme creation** and styling examples
+
+#### 📊 **Practical Examples**
+- Building a complete `GanttChartGenerator` class
+- Method chaining for easy task addition
+- Performance optimization for large datasets (500+ tasks)
+- Multiple export formats (HTML, PNG, PDF)
+
+#### 🎨 **Advanced Features Covered**
+- **Progress tracking** with visual overlays
+- **Milestone markers** and annotations
+- **Resource utilization** analysis
+- **Phase-wise statistical analysis**
+- **Custom color themes** (Ocean, Sunset, Forest)
+
+### Running the Tutorial
+
+```bash
+# Install Jupyter if not already installed
+pip install jupyter notebook
+
+# Launch the tutorial
+jupyter notebook tutorials/gantt_chart_tutorial.ipynb
+```
+
+The tutorial is designed for both beginners and advanced users, with clear explanations of concepts ranging from basic data manipulation to sophisticated visualization techniques.
+
+### 🚀 Quick Tutorial Highlights
+
+**What you'll learn:**
+- How Henry Gantt's 1910s invention evolved into modern project management
+- Mathematical formulas: `End Time = Start Time + Duration`
+- Building interactive charts with hover details and zoom capabilities
+- Creating glassmorphism UI effects with CSS backdrop filters
+- Performance optimization techniques for enterprise-scale projects
+
+**Tutorial Structure:**
+1. **Theory & Math** → Historical context + mathematical models
+2. **Data Engineering** → Pandas DataFrames + statistical analysis  
+3. **Visualization** → Plotly basics to advanced interactive features
+4. **Web Design** → Modern CSS with glassmorphism effects
+5. **Customization** → Building your own `GanttChartGenerator` class
+
 ---
 
-For more detailed technical documentation, see the Jupyter notebook tutorial: `gantt_chart_tutorial.ipynb`
+For more detailed technical documentation, see the complete Jupyter notebook tutorial
