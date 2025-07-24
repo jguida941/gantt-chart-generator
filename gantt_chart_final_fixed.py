@@ -58,7 +58,8 @@ fig = px.timeline(
     color_discrete_map=phase_colors,
     title="Project Gantt Chart - Software Development Lifecycle",
     hover_data={"Hover_Text": True, "Start": False, "End": False, "Phase": False},
-    labels={"Phase": "Project Phase"}
+    labels={"Phase": "Project Phase"},
+    template="plotly_white"  # Use clean white template - no grey boxes!
 )
 
 fig.update_yaxes(autorange="reversed")
@@ -390,9 +391,68 @@ html_string = '''
                 background: white !important;
             }
             
+            /* Only fix specific problematic backgrounds, don't mess with text */
+            .plotly .bg {
+                fill: white !important;
+            }
+            
             /* Hide range slider in print */
             .rangeslider-container {
                 display: none !important;
+            }
+            
+            /* Remove grey boxes from plotly chart in print */
+            .plot .bg,
+            .plot .plotbg,
+            .plot rect[fill="#f5f5f5"],
+            .plot rect[fill="#ffffff"],
+            .plot rect[fill="white"],
+            .plot rect[fill="rgb(245,245,245)"],
+            .plot .nsewdrag {
+                fill: white !important;
+                stroke: none !important;
+            }
+            
+            /* Target specific plotly background elements */
+            .plotly .bg,
+            .plotly .plotbg,
+            .js-plotly-plot .bg,
+            .js-plotly-plot .plotbg {
+                fill: white !important;
+                stroke: none !important;
+            }
+            
+            /* Remove any grey backgrounds on plotly text elements */
+            .plotly text,
+            .js-plotly-plot text {
+                background: none !important;
+                background-color: transparent !important;
+            }
+            
+            /* Target specific Plotly grey hex colors */
+            rect[fill="#C8D4E3"],
+            rect[fill="#EBF0F8"], 
+            rect[fill="#E5ECF6"],
+            rect[fill="#c8d4e3"],
+            rect[fill="#ebf0f8"],
+            rect[fill="#e5ecf6"] {
+                fill: white !important;
+                stroke: white !important;
+            }
+            
+            /* Target any remaining grey backgrounds in SVG */
+            .plotly .bg,
+            .plotly .plot .bg,
+            .js-plotly-plot .bg,
+            .js-plotly-plot .plot .bg,
+            svg rect[fill*="#C8D4E3"],
+            svg rect[fill*="#EBF0F8"],
+            svg rect[fill*="#E5ECF6"],
+            svg rect[fill*="rgb(200,212,227)"],
+            svg rect[fill*="rgb(235,240,248)"],
+            svg rect[fill*="rgb(229,236,246)"] {
+                fill: white !important;
+                stroke: none !important;
             }
             
             /* Task details page */
@@ -452,22 +512,37 @@ html_string = '''
                 background: white !important;
             }
             
+            /* Only target specific problem areas */
+            .section-title, .section-subtitle {
+                background: transparent !important;
+                background-color: transparent !important;
+            }
+            
+            /* Ensure all text is readable in print */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
             .task-name {
                 font-weight: bold !important;
                 color: #2C3E50 !important;
             }
             
-            /* Phase badges for print */
+            /* Phase badges for print - remove all styling to eliminate grey boxes */
             .phase-badge {
-                display: inline-block !important;
-                padding: 4px 12px !important;
-                border-radius: 12px !important;
-                font-size: 9pt !important;
+                display: inline !important;
+                background: none !important;
+                background-color: transparent !important;
+                border: none !important;
+                border-radius: 0 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+                font-size: 10pt !important;
                 font-weight: bold !important;
-                color: white !important;
+                color: #333 !important;
                 text-shadow: none !important;
-                print-color-adjust: exact !important;
-                -webkit-print-color-adjust: exact !important;
             }
             
             /* Progress bars for print */
