@@ -4,9 +4,20 @@ A sophisticated Python-based Gantt chart generator with modern web visualization
 
 ## 🚀 Quick Start
 
-1. Run the script: `python src/gantt_chart_final_fixed.py`
-2. Open the generated HTML file in your browser
-3. **For PDF Export**: Click "Export PDF" and ensure your browser is set to **Landscape orientation** for optimal results
+1. **Install dependencies**: `pip install plotly pandas`
+2. **Run the script**: `python gantt_chart_final_fixed.py`
+3. **View the chart**: Opens automatically in your browser (`gantt_chart_final.html`)
+4. **Export to PDF**: Click "Export PDF" button and set browser to **Landscape orientation**
+
+## ✨ Key Features
+
+- **Interactive Timeline**: Hover for task details, zoom and pan
+- **Modern UI**: Dark glassmorphism theme with smooth animations  
+- **Phase Color Coding**: Visual distinction between project phases
+- **Progress Tracking**: Progress bars with percentage completion
+- **Milestone Markers**: Vertical lines for key project dates
+- **PDF Export Ready**: Optimized print styles for clean PDF output
+- **Responsive Design**: Works on desktop and mobile browsers
 
 ## Table of Contents
 - [What is a Gantt Chart?](#what-is-a-gantt-chart)
@@ -83,13 +94,13 @@ The Gantt chart operates on the principle of temporal mapping where:
 python --version
 
 # Required packages
-pip install plotly pandas kaleido
+pip install plotly pandas
 ```
 
 ### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/gantt-chart-generator.git
+git clone https://github.com/jguida941/gantt-chart-generator.git
 cd gantt-chart-generator
 
 # Install dependencies
@@ -101,9 +112,9 @@ pip install -r requirements.txt
 ### Basic Usage
 ```bash
 # Generate the Gantt chart
-python gantt_chart_modern.py
+python gantt_chart_final_fixed.py
 
-# Output: gantt_chart_modern.html
+# Output: gantt_chart_final.html (opens automatically in browser)
 ```
 
 ### Code Example
@@ -171,7 +182,6 @@ milestones = [
 ### Dependencies
 - **Plotly** (v5.x): Interactive visualization library
 - **Pandas** (v1.x): Data manipulation and analysis
-- **Kaleido** (optional): Static image export
 
 ### Performance Considerations
 - **Rendering**: Client-side JavaScript rendering
@@ -186,24 +196,18 @@ milestones = [
 ## File Structure
 
 ```
-gantt_chart/
-├── src/                           # Source code
-│   ├── gantt_chart_final_fixed.py # Main application file
-│   └── gantt_chart_modern.py      # Alternative version
-├── output/                        # Generated files
-│   ├── gantt_chart_final.html     # Interactive HTML chart
-│   ├── gantt_chart_for_pdf.png    # High-resolution PNG
-│   └── *.pdf                      # Exported PDF files
+gantt-chart-generator/
+├── gantt_chart_final_fixed.py     # Main application file
+├── gantt_chart_final.html         # Generated HTML output
+├── gantt_chart_for_pdf.png        # Generated PNG image
+├── requirements.txt               # Python dependencies
 ├── docs/                          # Documentation
 │   ├── README.md                  # This file
 │   ├── ARCHITECTURE.md            # System architecture
 │   ├── FLOWCHARTS.md              # Mermaid diagrams
-│   └── CLAUDE.md                  # Project status
-├── tutorials/                     # Learning materials
-│   └── gantt_chart_tutorial.ipynb # Complete tutorial
-├── old_versions/                  # Archived files
-│   └── *.py                       # Previous versions
-└── requirements.txt               # Python dependencies
+│   └── CLAUDE.md                  # Project development notes
+└── tutorials/                     # Learning materials
+    └── gantt_chart_tutorial.ipynb # Complete tutorial
 ```
 
 ## Advanced Topics
