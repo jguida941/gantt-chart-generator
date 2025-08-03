@@ -2,14 +2,14 @@
 
 A sophisticated Python-based Gantt chart generator with modern web visualization, designed for project management and software development lifecycle tracking.
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Install dependencies**: `pip install plotly pandas`
 2. **Run the script**: `python gantt_chart_final_fixed.py`
 3. **View the chart**: Opens automatically in your browser (`gantt_chart_final.html`)
 4. **Export to PDF**: Click "Export PDF" button and set browser to **Landscape orientation**
 
-## ✨ Key Features
+## Key Features
 
 - **Interactive Timeline**: Hover for task details, zoom and pan
 - **Modern UI**: Dark glassmorphism theme with smooth animations  
@@ -239,31 +239,31 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Plotly team for the excellent visualization library
 - The open-source community for continuous inspiration
 
-## 📚 Interactive Tutorial
+## Interactive Tutorial
 
 ### Jupyter Notebook Deep Dive
 
 The project includes a comprehensive **Jupyter notebook tutorial** (`tutorials/gantt_chart_tutorial.ipynb`) that provides:
 
-#### 🔬 **PhD-Level Analysis** (22 Interactive Cells)
+#### **Analysis** (22 Interactive Cells)
 - **Mathematical foundations** of Gantt charts with formulas
 - **Critical Path Method (CPM)** theory and implementation
 - **Computational complexity analysis** and performance benchmarking
 - **Information visualization theory** and cognitive load principles
 
-#### 🛠 **Hands-On Implementation**
+#### **Hands-On Implementation**
 - **Data structure design** with Pandas DataFrames
 - **Interactive Plotly visualizations** from basic to advanced
 - **Modern CSS techniques**: Glassmorphism, animations, responsive design
 - **Custom theme creation** and styling examples
 
-#### 📊 **Practical Examples**
+#### **Practical Examples**
 - Building a complete `GanttChartGenerator` class
 - Method chaining for easy task addition
 - Performance optimization for large datasets (500+ tasks)
 - Multiple export formats (HTML, PNG, PDF)
 
-#### 🎨 **Advanced Features Covered**
+#### **Advanced Features Covered**
 - **Progress tracking** with visual overlays
 - **Milestone markers** and annotations
 - **Resource utilization** analysis
@@ -282,7 +282,7 @@ jupyter notebook tutorials/gantt_chart_tutorial.ipynb
 
 The tutorial is designed for both beginners and advanced users, with clear explanations of concepts ranging from basic data manipulation to sophisticated visualization techniques.
 
-### 🚀 Quick Tutorial Highlights
+### Quick Tutorial Highlights
 
 **What you'll learn:**
 - How Henry Gantt's 1910s invention evolved into modern project management
