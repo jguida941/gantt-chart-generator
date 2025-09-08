@@ -1,4 +1,5 @@
 # Interactive Gantt Chart Generator
+**Still updating features**
 
 A sophisticated Python-based Gantt chart generator with modern web visualization, designed for project management and software development lifecycle tracking.
 
